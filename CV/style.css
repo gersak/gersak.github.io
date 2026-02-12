@@ -1,0 +1,405 @@
+/* ===== CV STYLESHEET — DARK HEADER BAND + LIGHT BODY ===== */
+/* Preview: open CV.html in browser */
+/* PDF: weasyprint CV.html CV_Robert_Gersak.pdf */
+
+:root {
+  --header-bg: #1c1c1c;
+  --header-text: #b0b0b0;
+  --header-heading: #e8e8e8;
+  --main-bg: #ffffff;
+  --main-text: #222222;
+  --main-secondary: #555555;
+  --main-light: #888888;
+  --border: #d8d8d8;
+  --tag-bg: #f0f0f0;
+  --tag-border: #cccccc;
+  --tag-text: #333333;
+  --section-heading: #222222;
+}
+
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  color: var(--main-text);
+  background: #c0c0c0;
+  line-height: 1.4;
+  width: 210mm;
+  margin: 0 auto;
+  background: var(--main-bg);
+}
+
+/* ===== HEADER BAND ===== */
+.header-band {
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: 24px 24px;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #555;
+  flex-shrink: 0;
+}
+
+.header-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.header-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.header-title {
+  font-size: 1rem;
+  color: var(--header-text);
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.header-contact {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.contact-item {
+  font-size: 0.78rem;
+  color: var(--header-text);
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.contact-item a {
+  color: var(--header-heading);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* ===== BODY CONTENT ===== */
+.body-content {
+  padding: 20px 24px 28px;
+}
+
+/* ===== SUMMARY ===== */
+.summary {
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.summary p {
+  font-size: 0.88rem;
+  color: var(--main-secondary);
+  line-height: 1.55;
+}
+
+/* EYWA link */
+.eywa-link {
+  color: var(--main-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--main-light);
+}
+
+.eywa-link:hover {
+  border-bottom-color: var(--main-text);
+}
+
+.eywa-link strong {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* ===== TWO COLUMN SECTION ===== */
+.two-col {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  page-break-after: always;
+  break-after: page;
+}
+
+.col-left {
+  flex: 1.1;
+}
+
+.col-right {
+  flex: 0.9;
+}
+
+/* Section blocks inside columns */
+.section-block {
+  margin-bottom: 14px;
+}
+
+.section-block h2,
+.experience h2 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--section-heading);
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-block h3 {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: var(--main-light);
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--tag-border);
+  padding: 1px 8px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* Open Source & Community */
+.oss-item {
+  margin-bottom: 5px;
+}
+
+.oss-item a {
+  color: var(--main-text);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.oss-item a:hover {
+  text-decoration: underline;
+}
+
+.oss-desc {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--main-light);
+  line-height: 1.25;
+}
+
+.oss-stars {
+  font-size: 0.65rem;
+  color: var(--main-light);
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.oss-group-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--main-light);
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+.talk-item {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--main-secondary);
+  line-height: 1.4;
+}
+
+.talk-item strong {
+  font-weight: 600;
+  color: var(--main-text);
+}
+
+/* Education */
+.edu-item {
+  margin-bottom: 8px;
+}
+
+.edu-degree {
+  font-weight: 600;
+  color: var(--main-text);
+  font-size: 0.82rem;
+}
+
+.edu-detail {
+  font-size: 0.72rem;
+  color: var(--main-light);
+  font-style: italic;
+}
+
+.edu-school {
+  font-size: 0.76rem;
+  color: var(--main-secondary);
+}
+
+.edu-year {
+  font-size: 0.7rem;
+  color: var(--main-light);
+}
+
+/* Certifications */
+.section-block > p {
+  font-size: 0.82rem;
+  color: var(--main-secondary);
+}
+
+/* Languages row */
+.lang-row {
+  font-size: 0.82rem;
+  color: var(--main-secondary);
+}
+
+.lang-sep {
+  margin: 0 6px;
+  color: var(--main-light);
+}
+
+/* ===== EXPERIENCE ===== */
+.experience {
+  margin-bottom: 20px;
+}
+
+.job {
+  margin-bottom: 14px;
+}
+
+.job-period-block {
+  break-inside: avoid;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--main-text);
+}
+
+.job-period {
+  font-size: 0.76rem;
+  color: var(--main-light);
+  white-space: nowrap;
+}
+
+.job-company {
+  font-size: 0.8rem;
+  color: var(--main-secondary);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.job-intro {
+  font-size: 0.82rem;
+  color: var(--main-light);
+  margin-bottom: 6px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.job ul {
+  margin-left: 14px;
+  margin-bottom: 3px;
+}
+
+.job li {
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+  color: var(--main-text);
+  line-height: 1.4;
+}
+
+.job-tech {
+  font-size: 0.68rem;
+  color: var(--main-light);
+  font-style: italic;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.sub-role {
+  margin-top: 6px;
+  font-size: 0.82rem;
+  break-after: avoid;
+}
+
+.sub-role strong {
+  color: var(--main-text);
+  font-weight: 600;
+}
+
+.sub-period {
+  font-size: 0.76rem;
+  color: var(--main-light);
+}
+
+/* ===== PRINT / PDF ===== */
+@media print {
+  body {
+    background: white;
+    width: 100%;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 16mm 10mm;
+}

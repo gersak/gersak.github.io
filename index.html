@@ -1,1 +1,145 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Geršak</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    :root {
+      --bg: #1c1c1c;
+      --text: #e8e8e8;
+      --text-secondary: #888;
+      --accent: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    /* Favicon preview at different sizes */
+    .favicon-preview {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 3rem;
+    }
+
+    .favicon-preview img {
+      border-radius: 8px;
+      background: white;
+    }
+
+    .favicon-preview .size-label {
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      margin-top: 0.5rem;
+    }
+
+    .favicon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -1px;
+    }
+
+    .title {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #444;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    .links a:hover {
+      background: #333;
+      border-color: #666;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 1.5rem;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Favicon preview section -->
+    <div class="favicon-preview">
+      <div class="favicon-item">
+        <img src="favicon.svg" width="16" height="16" alt="favicon 16px">
+        <span class="size-label">16px</span>
+      </div>
+      <div class="favicon-item">
+        <img src="favicon.svg" width="32" height="32" alt="favicon 32px">
+        <span class="size-label">32px</span>
+      </div>
+      <div class="favicon-item">
+        <img src="favicon.svg" width="64" height="64" alt="favicon 64px">
+        <span class="size-label">64px</span>
+      </div>
+      <div class="favicon-item">
+        <img src="favicon.svg" width="128" height="128" alt="favicon 128px">
+        <span class="size-label">128px</span>
+      </div>
+    </div>
+
+    <h1>Robert Geršak</h1>
+    <p class="title">Co-Founder & Technical Lead</p>
+
+    <div class="links">
+      <a href="CV/">CV</a>
+      <a href="https://github.com/gersak">GitHub</a>
+      <a href="https://github.com/neyho/eywa">EYWA</a>
+      <a href="https://gersak.github.io/ty/welcome">ty</a>
+      <a href="https://www.linkedin.com/in/robert-ger%C5%A1ak-29274334/">LinkedIn</a>
+    </div>
+  </div>
+
+  <footer>Zagreb, Croatia</footer>
+</body>
+</html>

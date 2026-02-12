@@ -1,0 +1,15 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pdf": "node generate-pdf.js"
+  },
+  "keywords": [],
+  "author": "Robert Geršak",
+  "license": "ISC",
+  "description": "CV source files",
+  "dependencies": {
+    "puppeteer": "^24.37.2"
+  }
+}
